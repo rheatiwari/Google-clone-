@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 600px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        .logo {
+            width: 272px;
+            height: 92px;
+            background: url('google.jpeg') no-repeat;
+            background-size: 272px 92px;
+            text-indent: -9999px;
+        }
+        .search-box {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            flex-grow: 1;
+            border: none;
+            font-size: 18px;
+            padding: 12px;
+        }
+        .search-btn {
+            background-color: #4285f4;
+            color: #111875;
+            border: none;
+            border-radius: 24px;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .search-btn:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Google</div>
+        <form action="https://www.google.com/search" method="GET">
+            <div class="search-box">
+                <input type="text" class="search-input" name="q" placeholder="Search Google">
+                <button type="submit" class="search-btn">Google Search</button>
+            </div>
+        </form>
+    </div>
+    <!-- HTML Structure -->
+<div class="container">
+    <div class="logo">Google</div>
+    <form id="search-form">
+        <div class="search-box">
+            <input type="text" id="search-input" name="q" placeholder="Search Google">
+            <button type="submit" class="search-btn">Google Search</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
+       
